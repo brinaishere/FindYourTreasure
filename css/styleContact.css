@@ -1,0 +1,193 @@
+/*General styling*/
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #b9d6cc;
+    height: 100vh;
+}
+/* Navbar Styling */
+.navbar-brand {
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a0877;
+    transform: scale(1.2); /*enlarge the brandname*/
+}
+
+.navbar {
+    height: 80px;
+    background: #f1f9ffc1;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: rgb(1, 0, 9) !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0018b7 !important;
+    border-bottom: 2px solid #2238c9;
+    background: #d7eeffc1;
+}
+/*faq styling*/
+#faq {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+.faq-category {
+    margin-top: 20px;
+}
+
+.faq-btn {
+    background-color: #3f6941;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.faq-content {
+    padding: 15px;
+    background-color: #f1f1f1;
+    display: none;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-content.open {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+.faq-btn.active .faq-icon {
+    transform: rotate(45deg); 
+}
+
+/*form styling*/
+.formcontainer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #d1e1d8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label:not(.form-check-label){
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+/*button styling*/
+button {
+    background-color: #a9cde6;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+/*footer styling*/
+footer {
+    background-color: #ecebda;
+    color: #2e2a02;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+    width: 100%;
+}
+  
+/*toast message styling*/
+.toast-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.toast-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*media query*/
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

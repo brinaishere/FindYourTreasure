@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for travel guide website.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Travel Guide</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!--bootstrap & css-->
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleContact.css" />
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="HomePage.html">— Find Your Treasure —</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="TopDestination.html">Top Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DestinationsAttraction.html">Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="BudgetTip.html">Budget</a></li>
+                    <li class="nav-item"><a class="nav-link" href="traveltips.html">Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="itinarary.html">Itinerary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="HomePage.html">Homepage</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="signInLink" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="usernameDisplay" class="nav-link text-white" style="display: none;"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--faq questions & answers-->
+     <section id="faq" class="container my-5">
+        <h2 class="text-center mb-4">&#10067; Frequently Asked Questions</h2>
+
+        <div class="faq-category">
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Can I download or print the sample itineraries ?
+                </button>
+                <div class="faq-content">
+                    <p>Yes! You can download the itinerary as pdf file, the button is at the bottom of the page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Do you offer itineraries for both short and long trips ?
+                </button>
+                <div class="faq-content">
+                    <p>Yes, it is available for short and long trips.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Are the itineraries suitable for solo travelers, families, or couples ?
+                </button>
+                <div class="faq-content">
+                    <p>Yes, it is suitable for all types of travelers.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Are there any cultural festivals or events highlighted here ?
+                </button>
+                <div class="faq-content">
+                    <p>Yes, the cultural festivals is being showed at the culture page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Is the currency converter up to date daily ?
+                </button>
+                <div class="faq-content">
+                    <p>Yes, our currency converter is following the latest exchange rate. You may also use currency converter provided by other website to comfirm the amount.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-icon">+</span> Are the budget tips reliable ?
+                </button>
+                <div class="faq-content">
+                    <p>Our budget tips is being provided based on researches, u can also do your own researc to make sure the money currency and prices is accurate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Message form-->
+    <div class="formcontainer">
+        <h3>&#128235; We'd love to hear from you!</h3>
+        <p>If you have any questions, suggestions, or need assistance with your travels, feel free to get in touch with us.</p>
+        
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" onkeypress="letterOnly(event)" placeholder="Enter your full name." required/>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address." required/>
+            </div>            
+            
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject of your message." required/>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message or description here." required></textarea>
+            </div>
+
+            <!-- Remember Me button -->
+            <div class="form-group">
+                <button type="button" id="rememberBtn" class="btn btn-info">Remember Me</button>
+            </div>
+            <!--Send message button-->
+            <button type="submit">Send Message <span style='font-size:30px;'>&#128232;</span></button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Find Your Treasure. All Rights Reserved.</p>
+    </footer>
+
+    <!--Toast Message-->
+    <div id="toast" class="toast-message">✔ Info saved!</div>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Customize java-->
+    <script src="../javaScript/contact.js"></script>
+    
+</body>
+
+</html>

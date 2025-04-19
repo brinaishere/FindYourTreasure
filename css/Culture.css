@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2ecfd;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a0877;
+    transform: scale(1.2);
+    /*enlarge the brandname*/
+}
+
+.navbar {
+    background: #f1f9ffc1;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: rgb(1, 0, 9) !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0018b7 !important;
+    border-bottom: 2px solid #2238c9;
+    background: #d7eeffc1;
+}
+
+.culture-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.culture-video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.culture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.culture-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fffffff2;
+    text-align: center;
+}
+
+.culture-heading h1 {
+    text-shadow: 2px 2px 4px #000000c3;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Fix the carousel container to be square */
+.carousel-item {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    /* This creates a square aspect ratio */
+}
+
+/* Ensure images inside the carousel fill the square area */
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Ensures the image covers the square area without distortion */
+}
+
+/* Enlarge Carousel Arrows on Hover */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    transform: scale(1.5);
+}
+
+h2,
+h3 {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.carousel-inner .carousel-caption h4 {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}

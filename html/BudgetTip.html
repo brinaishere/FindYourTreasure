@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Treasure | Smart Budget Travel Guides</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/stylebudget.css">
+</head>
+<body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="HomePage.html">— Find Your Treasure —</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="TopDestination.html">Top Destinations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="DestinationsAttraction.html">Attractions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Culture.html">Culture</a></li>
+                        <li class="nav-item"><a class="nav-link" href="BudgetTip.html">Budget</a></li>
+                        <li class="nav-item"><a class="nav-link" href="traveltips.html">Tips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="itinarary.html">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="signInLink" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="usernameDisplay" class="nav-link text-white" style="display: none;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <!-- Heading -->
+    <section class="hero">
+        <h1>Find Your Treasure</h1>
+        <p>Treasure Every Trip, Even on a Budget</p>
+        <div class="country-nav">
+            <!-- Buttons to switch between countries -->
+            <button class="country-btn active" data-country="korea">
+                <i class="fas fa-plane"></i>Korea
+            </button>
+            <button class="country-btn" data-country="china">
+                <i class="fas fa-plane"></i> China
+            </button>
+            <button class="country-btn" data-country="france">
+                <i class="fas fa-plane"></i> France
+            </button>
+        </div>
+    </section>
+    
+    <main>
+        <!-- Korea Content -->
+        <section id="korea" class="country-content active">
+            <div class="country-header">
+                <div class="country-flag">🇰🇷</div>
+                <h2 class="country-title">Korea Travel Tips</h2>
+            </div>
+            
+            <div class="info-cards">
+                <!-- Accommodation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-hotel card-icon"></i>
+                        <h3>Affordable Stays</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Guesthouses</strong> <span class="price-tag">₩20,000-45,000 (≈RM67-152)</span> in Hongdae/Myeongdong</li>
+                            <li><strong>Hostels</strong> <span class="price-tag">₩30,000-90,000 (≈RM100-300)</span> popular options</li>
+                            <li><strong>Love Motels</strong> <span class="price-tag">₩45,000-105,000 (≈RM150-350)</span> surprisingly nice</li>
+                            <li><strong>Temple Stays</strong> <span class="price-tag">₩45,000-90,000 (≈RM150-300)</span> unique experience</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Transportation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-subway card-icon"></i>
+                        <h3>Transport Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>T-Money Card</strong> saves ₩100 (≈RM0.40) per ride</li>
+                            <li><strong>Subway</strong> <span class="price-tag">₩1,250 (≈RM4.25)</span> per trip</li>
+                            <li><strong>Korail Pass</strong> <span class="price-tag">₩115,000 (≈RM393)/2 days</span> unlimited travel</li>
+                            <li><strong>Intercity Buses</strong> Seoul→Busan <span class="price-tag">₩26,000-52,600 (≈RM80-160)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Food Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-utensils card-icon"></i>
+                        <h3>Food Savings</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Convenience Stores</strong> cheap meals available</li>
+                            <li><strong>Street Food</strong> <span class="price-tag">₩2,000-10,000 (≈RM6-31)</span> per item</li>
+                            <li><strong>Local Markets</strong> full meals <span class="price-tag">₩5,000-12,000 (≈RM15-36)</span></li>
+                            <li><strong>Banchan</strong> free side dish refills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tips Section -->
+            <div class="treasure-tips">
+                <h3><i class="fas fa-gem"></i> Hidden Treasure Tip</h3>
+                <p>Visit <strong>Gwangjang Market</strong> at night for the most authentic and affordable Korean street food experience. Try the mung bean pancakes (bindaetteok) and mayak kimbap - they're local favorites!</p>
+                <p>For a unique free activity, join the <strong>Seoul City Walking Tours</strong> offered by the Seoul Tourism Organization. They have English-speaking guides and cover fascinating areas like Bukchon Hanok Village.</p>
+                <div class="treasure-tips img">
+                    <img src="../K/K10.jpg">
+                    <img src="../K/K11.jpg">
+                    <img src="../K/K12.jpg">
+                </div>
+            </div>
+            
+            <!-- Budget Accommodation Recommendations -->
+            <div class="budget-stays">
+                <h3><i class="fas fa-map-marker-alt"></i> Korea Best Value Accommodations</h3>
+                
+                <!-- Accommodation Card 1: Hongdae Guesthouse -->
+                <div class="stay-card">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-k1">❤ Like</button>
+                    <h4>1. Hongdae Guesthouse</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Mapo-gu</p>
+                    <div class="price-tag">₩25,000/night (≈RM85)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../K/kstay1.jpg" alt="Hongdae Guesthouse room">
+                            <img src="../K/kstay2.jpg" alt="Hongdae Guesthouse lobby">
+                            <img src="../K/kstay3.jpg" alt="Hongdae Guesthouse common area">
+                        </div>
+                    </div>
+
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                        <li><i class="fas fa-subway"></i> 3-min walk to Hongik Univ. Station</li>
+                        <li><i class="fas fa-utensils"></i> 50+ restaurants nearby</li>
+                    </ul>
+                </div>
+                
+                <!-- Accommodation Card 2: Gyeongju Hanok Village -->
+                <div class="stay-card highlight">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-k2">❤ Like</button>
+                    <h4>2. Gyeongju Hanok Village</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Gyeongju</p>
+                    <div class="price-tag">₩70,000/night (≈RM230)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../K/kstay4.jpg" alt="Gyeongju Hanok Village room">
+                            <img src="../K/kstay5.jpg" alt="Gyeongju Hanok Village outside view">
+                            <img src="../K/kstay6.jpg" alt="Gyeongju Hanok Village view">
+                        </div>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-bed"></i> Traditional Korean Mattress</li>
+                        <li><i class="fas fa-bath"></i>  Private bathroom & Korean-style bathtub</li>
+                        <li><i class="fas fa-landmark"></i> Near Bulguksa Temple, Anapji Pond</li>
+                    </ul>
+                </div>
+                
+                <!-- Accommodation Card 3: Dongdaemun Hostel -->
+                <div class="stay-card">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-k3">❤ Like</button>
+                    <h4>3. Dongdaemun Hostel</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Jongno-gu</p>
+                    <div class="price-tag">₩18,000/night (≈RM60)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../K/kstay7.jpg" alt="Dongdaemun Hostel dormitory">
+                            <img src="../K/kstay8.jpg" alt="Dongdaemun Hostel common area">
+                            <img src="../K/kstay9.jpg" alt="Dongdaemun Hostel kitchen">
+                        </div>
+                    </div>
+
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-users"></i> Great social atmosphere</li>
+                        <li><i class="fas fa-tshirt"></i> Free laundry service</li>
+                        <li><i class="fas fa-store"></i> Opposite Dongdaemun Market</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- China -->
+        <section id="china" class="country-content">
+            <div class="country-header">
+                <div class="country-flag">🇨🇳</div>
+                <h2 class="country-title">China Travel Tips</h2>
+            </div>
+            
+            <div class="info-cards">
+                <!-- Accommodation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-hotel card-icon"></i>
+                        <h3>Affordable Stays</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Hostels</strong> <span class="price-tag">¥50-120 (≈RM33-80)</span> in major cities</li>
+                            <li><strong>Budget Hotels</strong> <span class="price-tag">¥150-300 (≈RM100-200)</span> clean and comfortable</li>
+                            <li><strong>Homestays</strong> <span class="price-tag">¥80-200 (≈RM53-133)</span> local family experience</li>
+                            <li><strong>Capsule Hotels</strong> <span class="price-tag">¥60-100 (≈RM40-67)</span> in big cities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Transportation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-subway card-icon"></i>
+                        <h3>Transport Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Metro</strong> <span class="price-tag">¥2-7 (≈RM1.30-4.70)</span> per trip in most cities</li>
+                            <li><strong>High Speed Rail</strong> Beijing→Shanghai <span class="price-tag">¥553 (≈RM370)</span> (2nd class)</li>
+                            <li><strong>Long Distance Buses</strong> <span class="price-tag">¥100-300 (≈RM67-200)</span> overnight options</li>
+                            <li><strong>Didi (Uber)</strong> cheaper than taxis in many cities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Food Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-utensils card-icon"></i>
+                        <h3>Food Savings</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Street Food</strong> <span class="price-tag">¥5-20 (≈RM3.30-13.30)</span> per item</li>
+                            <li><strong>Local Restaurants</strong> meals <span class="price-tag">¥15-30 (≈RM10-20)</span></li>
+                            <li><strong>Convenience Stores</strong> cheap snacks available</li>
+                            <li><strong>Breakfast Stalls</strong> <span class="price-tag">¥5-15 (≈RM3.30-10)</span> for full meal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Treasure Tips Section -->
+            <div class="treasure-tips">
+                <h3><i class="fas fa-gem"></i> Hidden Treasure Tip</h3>
+                <p>Visit <strong>local food markets</strong> like Wangfujing Snack Street in Beijing or Yuyuan Bazaar in Shanghai for authentic and affordable Chinese street food. Try jianbing (savory crepes) and baozi (steamed buns).</p>
+                <p>For transportation, download <strong>Didi (Chinese Uber)</strong> and <strong>MetroMan China</strong> apps before arrival. Many metro systems have English signage but apps help with navigation.</p>
+                <div class="treasure-tips img">
+                    <img src="../C/C10.jpg">
+                    <img src="../C/c13.jpg">
+                    <img src="../C/c12.jpg">
+                </div>
+            </div>
+            
+            <!-- Budget Accommodation Recommendations -->
+            <div class="budget-stays">
+                <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-c1">❤ Like</button>
+                <h3><i class="fas fa-map-marker-alt"></i> China Best Value Accommodations</h3>
+                <!-- Stay Card 1: Beijing Hutong Youth Hostel -->
+                <div class="stay-card">
+                    <h4>1. Beijing Hutong Youth Hostel</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Dongcheng District, Beijing</p>
+                    <div class="price-tag">¥120/night (≈RM80)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../C/C1.jpg" alt="Beijing Hutong courtyard">
+                            <img src="../C/C2.jpg" alt="Beijing Hutong room">
+                            <img src="../C/C3.jpg" alt="Beijing Hutong rooftop">
+                        </div>
+                    </div>
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-archway"></i> Traditional courtyard building</li>
+                        <li><i class="fas fa-bicycle"></i> Free bicycle rental</li>
+                        <li><i class="fas fa-landmark"></i> 15-min walk to Forbidden City</li>
+                    </ul>
+                </div>
+                
+                <!-- Stay Card 2: Shanghai Bund Capsule Hotel  -->
+                <div class="stay-card highlight">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-c2">❤ Like</button>
+                    <h4>2. Shanghai Bund Capsule Hotel</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Huangpu District, Shanghai</p>
+                    <div class="price-tag">¥80/night (≈RM53)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../C/C4.jpg" alt="Shanghai capsule pods">
+                            <img src="../C/C5.jpg" alt="Shanghai capsule lobby">
+                            <img src="../C/C6.jpg" alt="Shanghai capsule view">
+                        </div>
+                    </div>
+                     <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-water"></i> Bund view</li>
+                        <li><i class="fas fa-cube"></i> High-tech capsule pods</li>
+                        <li><i class="fas fa-train"></i> 2-min walk to Metro Line 2</li>
+                    </ul>
+                </div>
+
+                <!-- Stay Card 3: Chengdu Panda-Themed Inn -->
+                <div class="stay-card">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-c3">❤ Like</button>
+                    <h4>3. Chengdu Panda-Themed Inn</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Jinjiang District, Chengdu</p>
+                    <div class="price-tag">¥150/night (≈RM100)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../C/C7.jpg" alt="Chengdu panda-themed room">
+                            <img src="../C/C8.jpg" alt="Chengdu panda ">
+                            <img src="../C/C9.jpg" alt="Chengdu rooftop ">
+                        </div>
+                    </div>
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-paw"></i> Panda-themed decor</li>
+                        <li><i class="fas fa-umbrella-beach"></i> Rooftop garden</li>
+                        <li><i class="fas fa-pepper-hot"></i> Walk to Jinli Snack Street</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- France -->
+        <section id="france" class="country-content">
+            <div class="country-header">
+                <div class="country-flag">🇫🇷</div>
+                <h2 class="country-title">France Travel Tips</h2>
+            </div>
+            
+            <div class="info-cards">
+                <!-- Accommodation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-hotel card-icon"></i>
+                        <h3>Affordable Stays</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Hostels</strong> <span class="price-tag">€20-40 (≈RM100-200)</span> in Paris and major cities</li>
+                            <li><strong>Budget Hotels</strong> <span class="price-tag">€50-80 (≈RM250-400)</span> look for "Hôtel Formule 1"</li>
+                            <li><strong>Gîtes</strong> <span class="price-tag">€40-70 (≈RM200-350)</span> rural guesthouses</li>
+                            <li><strong>Chambres d'hôtes</strong> <span class="price-tag">€60-100 (≈RM300-500)</span> B&B style</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Transportation Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-subway card-icon"></i>
+                        <h3>Transport Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Metro</strong> <span class="price-tag">€1.90 (≈RM9.50)</span> per trip in Paris</li>
+                            <li><strong>TGV Trains</strong> book early for <span class="price-tag">€20-40 (≈RM100-200)</span> deals</li>
+                            <li><strong>BlaBlaCar</strong> ride-sharing <span class="price-tag">€10-30 (≈RM50-150)</span> per trip</li>
+                            <li><strong>City Bikes</strong> <span class="price-tag">€1-3 (≈RM5-15)</span> per day in many cities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Food Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="fas fa-utensils card-icon"></i>
+                        <h3>Food Savings</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Boulangeries</strong> sandwiches <span class="price-tag">€4-6 (≈RM20-30)</span></li>
+                            <li><strong>Marchés</strong> local markets for fresh produce</li>
+                            <li><strong>Plat du jour</strong> daily specials <span class="price-tag">€10-15 (≈RM50-75)</span></li>
+                            <li><strong>Picnics</strong> buy from supermarkets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Treasure Tips Section -->
+            <div class="treasure-tips">
+                <h3><i class="fas fa-gem"></i> Hidden Treasure Tip</h3>
+                <p>Visit <strong>local bakeries (boulangeries)</strong> around 7-8pm when they discount remaining bread and pastries. Many Parisian museums offer <strong>free entry</strong> on the first Sunday of each month.</p>
+                <p>For authentic but affordable dining, look for restaurants with <strong>"prix fixe"</strong> lunch menus (usually €12-20/≈RM60-100) or student areas like the Latin Quarter in Paris.</p>
+                <div class="treasure-tips img">
+                    <img src="../F/F10.jpg">
+                    <img src="../F/F11.jpg">
+                    <img src="../F/F13.jpg">
+                </div>
+            </div>
+            
+            <!-- Budget Accommodation Recommendations -->
+            <div class="budget-stays">
+                <h3><i class="fas fa-map-marker-alt"></i> France Best Value Accommodations</h3>
+                
+                <!-- Stay Card 1: Latin Quarter Hostel Paris -->
+                <div class="stay-card">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-f1">❤ Like</button>
+                    <h4>1. Latin Quarter Hostel Paris</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> 5th Arrondissement, Paris</p>
+                    <div class="price-tag">€35/night (≈RM170)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../F/F1.jpg" alt="Latin Quarter ">
+                            <img src="../F/F2.jpg" alt="Latin Quarter ">
+                            <img src="../F/F3.jpg" alt="Latin Quarter ">
+                        </div>
+                    </div>
+                     <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-university"></i> Near Sorbonne University</li>
+                        <li><i class="fas fa-utensils"></i> Simple breakfast included</li>
+                        <li><i class="fas fa-subway"></i> 3-min walk to metro</li>
+                    </ul>
+                </div>
+                
+                <!-- Stay Card 2: Lyon Old Town B&B -->
+                <div class="stay-card highlight">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-f2">❤ Like</button>
+                    <h4>2. Lyon Old Town B&B</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Lyon City Center</p>
+                    <div class="price-tag">€60/night (≈RM290)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../F/F4.jpg" alt="Lyon B&B room">
+                            <img src="../F/F5.jpg" alt="Lyon B&B room">
+                            <img src="../F/F6.jpg" alt="Lyon B&B room">
+                        </div>
+                    </div>
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-home"></i> Traditional French apartment</li>
+                        <li><i class="fas fa-chess-knight"></i> Heart of Old Town</li>
+                        <li><i class="fas fa-wine-glass-alt"></i> Famous bouchons nearby</li>
+                    </ul>
+                </div>
+
+                <!-- Stay Card 3: Nice Beach Budget Hotel -->
+                <div class="stay-card">
+                    <button class="btn btn-outline-danger like-btn float-end mt-2 me-2" id="like-f3">❤ Like</button>
+                    <h4>3. Nice Beach Budget Hotel</h4>
+                    <p class="location"><i class="fas fa-map-pin"></i> Promenade des Anglais, Nice</p>
+                    <div class="price-tag">€75/night (≈RM360)</div>
+                    
+                    <div class="stay-images">
+                        <div class="stay-carousel">
+                            <img src="../F/F7.jpg" alt="Nice hotel">
+                            <img src="../F/F8.jpg" alt="Nice hotel">
+                            <img src="../F/F9.jpg" alt="Nice hotel">
+                        </div>
+                    </div>
+                    
+                    <!-- Features List -->
+                    <ul class="features">
+                        <li><i class="fas fa-umbrella-beach"></i> Sea view rooms</li>
+                        <li><i class="fas fa-swimming-pool"></i> Rooftop pool</li>
+                        <li><i class="fas fa-bus"></i> Opposite bus terminal</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+     <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>&copy; 2025 Find Your Treasure. All Rights Reserved.</p>
+    </footer>
+ 
+    <script src="../javaScript/budget.js"></script>
+</body>
+</html>

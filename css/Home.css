@@ -1,0 +1,183 @@
+/* General Styling */
+body {
+    background-color: #e2ecfd;
+    color: #5e4c5a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a0877;
+    transform: scale(1.2); /*enlarge the brandname*/
+}
+
+.navbar {
+    background: #f1f9ffc1;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .nav-link {
+    color: rgb(1, 0, 9) !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0018b7 !important;
+    border-bottom: 2px solid #2238c9;
+    background: #d7eeffc1;
+}
+
+/* Sign in Section */
+#usernameDisplay {
+    display: inline-block !important;
+    padding: 0.5rem 1rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(234, 233, 255, 0.16);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 3.2rem;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+}
+
+.banner-text p {
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 500;
+}
+
+.banner-text .btn {
+    background: #f0f2ff;
+    font-weight: bold;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.banner-text .btn:hover {
+    background: #F6F8D5;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Ensure proper spacing for the section */
+#explore-section {
+    scroll-margin-top: 100px;
+    /* Matches navbar height + padding */
+}
+
+/* Carousel Styling */
+/* Customize font size, font family, and other styles for headings */
+#explore-section h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #0a0877;
+    text-align: center;
+}
+
+#explore-section h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0a0877;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#explore-section h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-caption h4 {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Enlarge Carousel Arrows on Hover */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    transform: scale(1.5);
+}
+
+/* About section styling */
+.about-section {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Styles for mobile devices */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
